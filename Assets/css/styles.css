@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 247);
+}
+
+body {
+    height: 100%;
+    background-color: rgb(238, 238, 247);
+}
+
+
+/* *****************************************************************HEADER*IMAGE*********************************************************************************** */
+
+.image-container {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+}
+.image-container .header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(50%);
+}
+.image-container .image-text {
+    position: absolute;
+    bottom: 15px;
+    right: 70px;
+    padding: 10px;
+    background-color: rgb(146, 204, 206);
+    color: rgb(48, 53, 61);
+    font-size: 25px;
+    line-height: .6;
+    font-weight: bold;
+}
+
+/* *****************************************************************ABOUT*ME*********************************************************************************** */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 20% 80%; /* Divide the container into two columns */
+    grid-gap: 0px; /* Add some gap between the columns */
+    height: 200px;
+    margin-top: 35px;
+}
+
+.about-me {
+    /* Add your styles for the "About Me" container */
+    justify-self: end;
+    border-right: 5px solid rgb(68, 88, 119);
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 45px;
+    color: rgb(68, 88, 119);
+    font-weight: bold;
+}
+
+.article {
+    /* Add your styles for the "Article" container */
+    width: 80%;
+    margin-right: 100px;
+    padding-left: 1px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: rgb(68, 88, 119);
+}
+
+/* *****************************************************************WORK*********************************************************************************** */
+
+.work-container1 {
+    display: grid;
+    grid-template-columns: 20% 80%; /* Divide the container into two columns */
+    grid-gap: 0px; /* Add some gap between the columns */
+    margin-top: 35px;
+}
+
+.big-image {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid rgb(146, 204, 206);
+    padding-left: 0px;
+    margin-left: 8px;
+    margin-right: 100px;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.big-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Apply a dark tint by default */
+    transition: filter 0.3s;
+}
+  
+.big-image img:hover {
+    filter: brightness(100%); /* Remove the dark tint on hover */
+    cursor: pointer;
+}
+
+.Surf {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(146, 204, 206);
+    color: rgb(48, 53, 61);
+}
+
+.Surf a {
+    font-size: 35px;
+}
+
+.surf-report {
+    font-size: 10px;
+}
+
+.work{
+    justify-self: end;
+    margin-right: 10px;
+    padding-right: 0px;
+    border-right: 5px solid rgb(68, 88, 119);
+    padding: 5px;
+    font-size: 45px;
+    color: rgb(68, 88, 119);
+    font-weight: bold;
+}
+
+/* *****************************************************************WORK*PT*2*********************************************************************************** */
+
+.small-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Update the grid-template-columns to create a 2x2 grid */
+    grid-gap: 8px;
+    margin-top: 0px;
+    padding-top: 8px;
+    margin-right: 0px;
+    width: 80.5%;
+    padding-left: 8px;
+}
+
+.small-images img {
+    width: 100%; /* Use relative width to fill the grid cell */
+    height: 100%;
+    margin: 0; /* Remove the margin to avoid extra spacing */
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid rgb(146, 204, 206);
+    padding: 0px;
+    filter: brightness(50%); /* Apply a dark tint by default */
+    transition: filter 0.3s;
+}
+
+.small-images img:hover {
+  filter: brightness(100%); /* Remove the dark tint on hover */
+  cursor: pointer;
+}
+
+.small-images .image-text1 {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(146, 204, 206);
+    color: rgb(48, 53, 61);
+}
+.small-images .image-text2 {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(146, 204, 206);
+    color: rgb(48, 53, 61);
+}
+.small-images .image-text3 {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(146, 204, 206);
+    color: rgb(48, 53, 61);
+}
+.small-images .image-text4 {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(146, 204, 206);
+    color: rgb(48, 53, 61);
+}
+.work-container2 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 0px;
+    height: 100px;
+    margin-top: 0px;
+}
+
+.empty {
+    justify-self: right;
+    margin-right: 10px;
+    padding-right: 0px;
+    border-right: 5px solid rgb(68, 88, 119);
+    padding: 5px;
+}
+
+.image-overlay a {
+    font-size: 35px;
+}
+
+.LED, .Calculate, .Pastel, .Run-Buddy {
+    font-size: 10px;
+}
+
+
+/* *****************************************************************TOP*NAME*********************************************************************************** */
+
+.container555 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px; /* Adjust the height as needed */
+    background-color: rgb(48, 53, 61);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Adjust the width as needed */
+}
+
+.Name {
+    order: 1; /* Change the order of the element to push it to the left */
+    margin-right: 20px;
+    font-size: 45px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(146, 204, 206);
+    margin-left: -100px;
+    color: rgb(48, 53, 61);
+    font-weight: bold;
+}
+
+.links-container {
+    order: 2; /* Change the order of the element to push it to the right */
+}
+
+.links-container .links1 {
+    margin-left: 8px;
+}
+
+.links1 {
+    padding-bottom: 3px;
+    border-bottom: 5px solid rgb(146, 204, 206);
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(146, 204, 206);
+    position: relative;
+}
+
+.links1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(146, 204, 206);
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.links1:hover::after {
+    height: 100%;
+    transition: height 0.8s ease;
+}
+
+.links1:hover {
+    color: rgb(48, 53, 61);
+    background-color: rgb(146, 204, 206);
+}
+
+/* ************************************************************************FOOTER********************************************************************************** */
+
+footer.footer {
+    margin-top: 350px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    height: 140px;
+    background-color: rgb(238, 238, 247);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 20% 80%; /* Divide the container into columns with a minimum width of 120px */
+    grid-gap: 0px; /* Add some gap between the columns */
+    height: 100px;
+    margin-top: 35px;
+}
+
+.contact-me {
+    /* Add your styles for the "About Me" container */
+    justify-self: end; /* Center the container horizontally */
+    border-right: 5px solid rgb(68, 88, 119);
+    padding: 5px;
+    margin-right: 16px;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: rgb(68, 88, 119);
+    font-weight: bold;
+    background-color: rgb(238, 238, 247);
+}
+
+.article2 {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-right: 300px;
+    gap: 65px;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.links2 {
+    padding-bottom: 3px;
+    border-bottom: 5px solid rgb(68, 88, 119);
+    text-decoration: none;
+    color: rgb(48, 53, 61);
+    font-size: 20px;
+}
+.links2:hover {
+    background-color: rgb(68, 88, 119);
+    color: rgb(238, 238, 247);
+}
